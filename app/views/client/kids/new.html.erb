@@ -1,0 +1,17 @@
+<h1>Add Child</h1>
+<%= form_tag "/client/kids", method: :post do %>
+  <div>
+    Name: <input type="text" name="name"   />
+  </div>
+
+  <div>
+    Age: <input type="number" name="age">
+  </div>
+
+  <div>
+    Grade: <input type="number" name="grade">
+  </div>
+
+  <input type="submit" name= "" value="Create Child" />
+
+  <% end %>

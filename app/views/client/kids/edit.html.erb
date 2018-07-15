@@ -1,0 +1,23 @@
+<h2>Edit Child Info:</h2>
+
+<%= form_tag "/client/kids/#{@kid['id']}", method: :patch do %>
+  <div>
+    Name: <input type="text" name="name" value="<%= @kid['name'] %>" />
+  </div>
+  <div>
+    Age: <input type="number" name="age" value="<%= @kid['age'] %>" />
+  </div>
+  <div>
+    Grade: <input type="number" name="grade" value="<%= @kid['grade'] %>" />
+  </div>
+  <div>
+    Teacher: <input type="text" name="teacher" value="<%= @kid['teacher'] %>"/>
+  </div>
+  <div>
+    School: <input type="text" name="school" value="<%= @kid['school'] %>" />
+  </div>
+  <div>
+    Image: <input type="text" name="image_url" value="<%= @kid['image_url'] %>"/>
+  </div>
+  <input type="submit" name="" value="Update Kid" />
+<% end %>

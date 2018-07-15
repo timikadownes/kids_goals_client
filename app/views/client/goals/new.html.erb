@@ -1,0 +1,22 @@
+<h1>Add Goal</h1>
+<%= form_tag "/client/goals", method: :post do %>
+  <div>
+    Category: <input type="text" name="category" />
+  </div>
+
+  <div>
+    Due Date: <input type="number" name="due_date">
+  </div>
+
+  <div>
+    Description: <input type="text" name="description">
+  </div>
+  <div>
+    Child ID: <input type="number" name="kid_id">
+  </div>
+  <div>
+    Image: <input type="text" name="image_url">
+  </div>
+  <input type="submit" name= "" value="Create New Goal" />
+
+  <% end %>

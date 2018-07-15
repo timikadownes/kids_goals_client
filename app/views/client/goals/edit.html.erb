@@ -1,0 +1,17 @@
+<h2>Edit Goal Info:</h2>
+
+<%= form_tag "/client/goals/#{@goal['id']}", method: :patch do %>
+  <div>
+    Category: <input type="text" name="category" value="<%= @goal['category'] %>" />
+  </div>
+  <div>
+    Date: <input type="number" name="date" value="<%= @goal['date'] %>" />
+  </div>
+  <div>
+    Description: <input type="text" name="description" value="<%= @goal['description'] %>"/>
+  </div>
+  <div>
+    Image: <input type="text" name="image_url" value="<%= @goal['image_url'] %>"/>
+  </div>
+  <input type="submit" name="" value="Update Goal" />
+<% end %>

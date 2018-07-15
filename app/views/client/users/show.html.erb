@@ -1,0 +1,26 @@
+<h2>Parent Homepage</h2>
+
+  <p>Name: <%= @user['name'] %></p>
+  <p>email: <%= @user['email'] %></p>
+  
+<h3>Your Children</h3>
+
+<% @user['kids'].each do |kid| %>
+  <p>kids name: <%= kid['name'] %></p>
+  <p>kids age: <%= kid['age'] %></p>
+  <p>kids grade: <%= kid['grade'] %></p>
+  <p>kids teacher: <%= kid['teacher'] %></p>
+  <p>kids school: <%= kid['school'] %></p>
+  <p>kids image: <%= kid['image'] %></p>
+<% end %>
+
+  
+
+  
+
+
+
+
+
+
+
