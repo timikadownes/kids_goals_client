@@ -6,14 +6,14 @@ namespace :client do
   post "/kids" => "kids#create"
   get "/kids/:id/edit" => "kids#edit"
   patch "/kids/:id" => "kids#update"
-  delete "kids/:id" => "kids#destroy"  
+  delete "/kids/:id" => "kids#destroy"  
   
   get "/goals/new" => "goals#new"
   get "/goals/:id" => "goals#show"
   post "/goals" => "goals#create"
   get "/goals/:id/edit" => "goals#edit"
   patch "/goals/:id" => "goals#update"
-  delete "goals/:id" => "goals#destroy"
+  delete "/goals/:id" => "goals#destroy"
   
   get "/signup" => "users#new"
   post "/users" => "users#create"
